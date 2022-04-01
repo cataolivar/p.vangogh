@@ -1,0 +1,342 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+.header {
+  grid-area: header;
+  background-color: #FFCE01;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; }
+  .header .h1__vangogh {
+    font-weight: 600;
+    font-family: 'Yellowtail', cursive; }
+
+.nav {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  background-color: #FFCE01;
+  text-align: center;
+  grid-area: nav;
+  height: 80px;
+  margin-top: -1px; }
+  .nav .nav__ul__li {
+    font-size: large;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    height: 100%;
+    align-items: center; }
+  .nav .li:hover {
+    transform: scale(1.2); }
+
+/*FOOTER INDEX*/
+.footer__index {
+  margin-top: 100px; }
+
+/*FOOTER PERIODOS*/
+.footer__periodos {
+  margin-top: 400px; }
+
+/*FOOTER HISTORIA MUSEO CONTACTO*/
+.footer, .footer__index, .footer__periodos {
+  font-family: 'Volkhov', serif;
+  font-style: italic;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 100%;
+  height: 60px;
+  align-items: center;
+  justify-items: center;
+  border-top: black solid 1px;
+  bottom: 0;
+  grid-area: footer; }
+
+.a__footer:hover {
+  transform: scale(1.2); }
+
+.grid__area__index {
+  display: grid;
+  grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer"; }
+
+.grid__area__historia {
+  display: grid;
+  grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer"; }
+
+.grid__area__periodos {
+  display: grid;
+  grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer"; }
+
+.grid__area__museo {
+  display: grid;
+  grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer"; }
+
+.grid__area__contacto {
+  display: grid;
+  grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer"; }
+
+/*MEDIA QUERIE - MOBILE INDEX*/
+@media screen and (max-width: 412px) {
+  /*HEADER*/
+  .header {
+    max-width: max-content;
+    display: grid;
+    grid-template-columns: 31vw 34vw 35vw;
+    grid-template-rows: 70px; }
+    .header .h1__vangogh {
+      font-size: 15px;
+      margin-left: 141px; }
+    .header .logotype {
+      margin-left: 70px; }
+  /*NAV*/
+  .nav {
+    max-width: max-content;
+    display: grid;
+    grid-template-columns: 31vw 34vw 35vw;
+    margin-left: -0px; }
+    .nav .nav__ul__li {
+      margin-left: 190px;
+      padding-left: 15px;
+      display: grid;
+      grid-template-columns: 15vw 20vw 20vw 20vw 18vw; }
+  /*MAIN*/
+  .main__index {
+    max-width: 412px;
+    max-height: 1060px; }
+    .main__index .card {
+      display: flex;
+      flex-direction: column;
+      margin-left: 80px; }
+    .main__index .card__index1 {
+      margin-top: 10px;
+      margin-bottom: 10px; }
+  /*FOOTER*/
+  .footer__index {
+    width: 412px; } }
+
+/*MEDIA QUERIE _ MOBILE HISTORIA*/
+@media screen and (max-width: 412px) {
+  /*MAIN*/
+  .main__historia {
+    width: 400px; }
+    .main__historia .h2 {
+      margin-bottom: 20px; }
+    .main__historia .h3__historia {
+      margin-left: 5px; }
+    .main__historia .img__historia {
+      max-width: 300px;
+      max-height: 300px;
+      margin-top: 30px;
+      margin-bottom: 30px; }
+  /*FOOTER*/
+  .footer, .footer__index, .footer__periodos {
+    width: 412px;
+    margin-left: -1px; } }
+
+/*MEDIA QUERIE _ MOBILE PERIODOS*/
+@media screen and (max-width: 412px) {
+  .main__periodos {
+    width: 410px;
+    margin-bottom: 450px; }
+    .main__periodos .section__periodos {
+      display: flex;
+      flex-direction: column;
+      padding-right: 5px; }
+    .main__periodos .section__periodos1 {
+      padding-left: 5px;
+      padding-right: 5px; }
+  /*FOOTER*/
+  .footer__periodos {
+    width: 412px; } }
+
+/*MEDIA QUERIE _ MOBILE MUSEO*/
+@media screen and (max-width: 412px) {
+  /*MAIN*/
+  .main__museo {
+    width: 412px;
+    max-height: 695px;
+    padding-top: 30px; }
+    .main__museo .mapa {
+      width: 300px;
+      height: 300px; } }
+
+/*MEDIA QUERIE _ MOBILE CONTACTO*/
+@media screen and (max-width: 412px) {
+  /*MAIN*/
+  .main__contacto {
+    width: 412px;
+    padding-top: 20px; }
+    .main__contacto .img__contacto {
+      width: 300px; }
+    .main__contacto .section__contacto {
+      max-width: 370px;
+      margin-bottom: 34px; }
+    .main__contacto form {
+      padding-top: 10px; } }
+
+/*MEDIA QUERIE - TABLET INDEX*/
+@media screen and (max-width: 768px) {
+  .main__index {
+    width: 768px;
+    padding-bottom: 90px; }
+    .main__index .h2 {
+      margin-bottom: 40px; }
+  .footer__index {
+    max-width: 768px;
+    margin-top: 140px; } }
+
+/*MEDIA QUERIE - TABLET HISTORIA*/
+@media screen and (max-width: 768px) {
+  .main__historia {
+    padding-top: 30px; }
+    .main__historia .h2 {
+      padding-bottom: 10px; }
+    .main__historia .img__historia {
+      margin-top: 25px;
+      margin-bottom: 25px; } }
+
+/*MEDIA QUERIE - TABLET PERIODOS*/
+@media screen and (max-width: 768px) {
+  .main__periodos {
+    max-width: 768px; }
+    .main__periodos .section__periodos {
+      margin-left: 10px;
+      margin-right: 10px; }
+    .main__periodos .section__periodos1 {
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 30px;
+      margin-bottom: 40px; }
+  .footer__periodos {
+    margin-top: 500px; } }
+
+/*MEDIA QUERIE - TABLET MUSEO*/
+@media screen and (max-width: 768px) {
+  .main__museo {
+    padding-top: 30px;
+    height: 830px; } }
+
+/*MEDIA QUERIE - TABLET CONTACTO*/
+@media screen and (max-width: 768px) {
+  .main__contacto {
+    padding-top: 30px;
+    padding-bottom: 9px; }
+    .main__contacto form {
+      padding-top: 5px; } }
+
+/*MAIN*/
+.main__index {
+  font-family: 'Prata', serif;
+  grid-area: main;
+  padding-top: 56px; }
+  .main__index .p__index {
+    text-align: center;
+    padding-bottom: 40px; }
+  .main__index .h2 {
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 40px; }
+  .main__index .card {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly; }
+  .main__index .card__index, .main__index .card__index1, .main__index .card__index2 {
+    height: 300px;
+    width: 250px;
+    background-size: cover;
+    color: white;
+    border-radius: 10px;
+    transition: transform 500ms ease; }
+  .main__index .card__index {
+    background-image: url(https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2016/06/16/14660983323298.jpg); }
+  .main__index .card__index1 {
+    background-image: url(https://www.slobidka.com/images/vangogh/Van_Gogh-16.jpg); }
+  .main__index .card__index2 {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Vincent_Willem_van_Gogh_128.jpg/250px-Vincent_Willem_van_Gogh_128.jpg); }
+  .main__index .card__index:hover, .main__index .card__index1:hover, .main__index .card__index2:hover {
+    transform: scale(1.05); }
+  .main__index .card__p {
+    padding: 25px; }
+
+/*MAIN*/
+.main__historia {
+  text-align: center;
+  font-family: 'Prata', serif;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  grid-area: main; }
+  .main__historia .main__historia p {
+    margin: 2rem 3rem;
+    text-align: justify;
+    line-height: 25px; }
+  .main__historia .h3__historia {
+    font-size: medium;
+    text-align: center; }
+  .main__historia .img__historia {
+    height: 362px;
+    width: 420px;
+    border-radius: 10px; }
+
+/*MAIN*/
+.main__periodos {
+  text-align: center;
+  font-family: 'Prata', serif;
+  margin-top: 20px;
+  grid-area: main; }
+  .main__periodos .main__periodos p {
+    line-height: 25px; }
+  .main__periodos .section__periodos {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center; }
+  .main__periodos .section__periodos1 {
+    display: flex;
+    justify-content: center; }
+  .main__periodos .div__periodos {
+    height: 400px;
+    width: 400px; }
+  .main__periodos .div__periodos1 {
+    height: 80px;
+    width: 1000px; }
+
+/*MAIN*/
+.main__museo {
+  text-align: center;
+  list-style-position: inside;
+  font-family: 'Prata', serif;
+  grid-area: main;
+  margin-top: 10px; }
+  .main__museo .main__museo section {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+
+/*MAIN*/
+.main__contacto {
+  text-align: center;
+  font-family: 'Prata', serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  grid-area: main; }
+  .main__contacto .section__contacto {
+    border: 1px solid black;
+    width: 600px;
+    margin-top: 10px; }
+  .main__contacto .h2__contacto {
+    margin-top: 10px;
+    margin-bottom: 15px; }
+  .main__contacto .section {
+    margin-bottom: 30px; }
+  .main__contacto .section__email {
+    margin-right: 4%;
+    margin-bottom: 30px; }
+  .main__contacto .checkbox {
+    display: flex;
+    justify-content: center; }
+  .main__contacto .img__contacto {
+    border-radius: 10px; }

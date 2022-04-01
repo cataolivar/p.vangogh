@@ -1,0 +1,239 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@import "header";
+@import "nav";
+@import "footer";
+@import "grid-area";
+@import"media-queries";
+
+/*MAIN*/
+
+.main__index
+{
+    font-family: 'Prata', serif;
+    grid-area: main;
+    padding-top: 56px;
+
+.p__index
+{
+text-align: center;
+padding-bottom: 40px;
+}
+
+.h2
+{
+text-align: center;
+margin-top: 10px;
+padding-bottom: 40px;
+}
+
+.card 
+{
+    display: flex;
+    justify-content: center;
+    justify-content:space-evenly;
+}
+
+%cards 
+{
+    height: 300px;
+    width: 250px;
+    background-size: cover;
+    color: white;
+    border-radius: 10px;
+    transition: transform 500ms ease;
+}
+
+.card__index
+{
+    @extend %cards;
+    background-image: url(https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2016/06/16/14660983323298.jpg) ;
+}
+
+.card__index1
+{
+    background-image: url(https://www.slobidka.com/images/vangogh/Van_Gogh-16.jpg);
+    @extend %cards;
+}
+
+.card__index2
+{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Vincent_Willem_van_Gogh_128.jpg/250px-Vincent_Willem_van_Gogh_128.jpg);
+    @extend %cards;
+}
+
+%card__animacion
+{
+    &:hover
+    {
+        transform: scale(1.05);
+    }
+}
+
+.card__index
+{
+    @extend %card__animacion;
+}
+
+.card__index1:hover
+{
+    @extend %card__animacion;
+}
+
+.card__index2:hover
+{
+    @extend %card__animacion;
+}
+
+.card__p
+{
+    padding: 25px;
+}
+}
+
+/*MAIN*/
+
+.main__historia
+{
+    text-align: center;
+    font-family: 'Prata', serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    grid-area: main;
+
+.main__historia p
+{
+margin: 2rem 3rem;
+text-align: justify;
+line-height: 25px;
+}
+
+.h3__historia
+{
+    font-size:medium;
+    text-align: center;
+}
+
+.img__historia
+{
+    height:362px;
+    width:420px;
+    border-radius: 10px;
+}
+
+}
+
+/*MAIN*/
+
+.main__periodos
+{
+    text-align: center;
+    font-family: 'Prata', serif;
+    margin-top: 20px;
+    grid-area: main;
+
+.main__periodos p
+{
+    line-height: 25px;
+}
+
+.section__periodos
+{
+display: flex;
+margin-top: 20px;
+justify-content: center;
+}
+
+.section__periodos1
+{
+    display: flex;
+    justify-content: center;
+}
+
+.div__periodos
+{
+height: 400px;
+width: 400px;
+}
+
+
+.div__periodos1
+{
+height: 80px;
+width: 1000px;
+
+}
+
+}
+
+/*MAIN*/
+
+.main__museo
+{
+    text-align:center;
+    list-style-position:inside;
+    font-family: 'Prata', serif;
+    grid-area: main;
+    margin-top: 10px;
+
+.main__museo section
+{
+margin-top: 10px;
+margin-bottom: 10px;
+}
+}
+
+/*MAIN*/
+
+
+.main__contacto
+{
+    text-align: center;
+    font-family: 'Prata', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    grid-area: main;
+
+.section__contacto
+{
+    border: 1px solid black;
+    width: 600px;
+    margin-top: 10px;
+}
+
+.h2__contacto
+{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.section
+{
+ margin-bottom: 30px;
+}
+
+.section__email
+{
+    margin-right: 4%;
+    margin-bottom: 30px;
+}
+
+.checkbox
+{
+    display: flex;
+    justify-content: center;
+}
+
+.img__contacto
+{
+    border-radius: 10px;
+}
+
+}

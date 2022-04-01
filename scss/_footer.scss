@@ -1,0 +1,41 @@
+/*FOOTER INDEX*/
+
+.footer__index
+{
+    @extend .footer;
+    margin-top: 100px;
+}
+
+/*FOOTER PERIODOS*/
+
+.footer__periodos
+{
+    @extend .footer;
+    margin-top: 400px;
+}
+
+/*FOOTER HISTORIA MUSEO CONTACTO*/
+
+.footer
+{
+    font-family: 'Volkhov', serif; 
+    font-style: italic;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100%;
+    height: 60px;
+    align-items:center ;
+    justify-items: center;
+    border-top: black solid 1px;
+    bottom: 0; 
+    grid-area: footer;
+}
+
+.a__footer
+    {
+        &:hover
+        {
+    transform: scale(1.2);
+        }
+    }

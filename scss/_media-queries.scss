@@ -1,0 +1,295 @@
+/*MEDIA QUERIE - MOBILE INDEX*/
+
+@media screen and (max-width:412px) 
+{
+/*HEADER*/
+
+.header{
+    max-width:max-content;
+    display:grid;
+    grid-template-columns: 31vw 34vw 35vw;   
+    grid-template-rows: 70px;
+
+.h1__vangogh
+{
+    font-size:15px;   
+    margin-left:141px;
+}
+
+.logotype
+{
+    margin-left: 70px;
+}
+} 
+
+/*NAV*/
+
+.nav
+{
+    max-width:max-content;
+    display:grid;
+    grid-template-columns: 31vw 34vw 35vw;  
+    margin-left:-0px; 
+
+.nav__ul__li
+{
+    margin-left: 190px;
+    padding-left:15px;
+    display: grid;
+    grid-template-columns: 15vw 20vw 20vw 20vw 18vw;
+}
+}
+
+/*MAIN*/ 
+
+.main__index
+{
+    max-width: 412px;
+    max-height: 1060px;
+
+    .card
+    {
+       display: flex;
+       flex-direction: column;
+       margin-left: 80px;
+    }
+
+    .card__index1
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+}
+
+
+/*FOOTER*/
+
+.footer__index
+{
+    width: 412px;
+}
+}
+  
+  /*MEDIA QUERIE _ MOBILE HISTORIA*/
+
+@media screen and (max-width:412px)
+{
+    /*MAIN*/
+
+    .main__historia
+    {
+        width: 400px;
+
+    .h2
+    {
+        margin-bottom: 20px;
+    }    
+    
+    .h3__historia
+    {
+        margin-left: 5px;
+    }
+    
+    .img__historia
+    {
+        max-width:300px;
+        max-height:300px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    }
+
+    /*FOOTER*/
+
+    .footer
+    {
+        width: 412px;
+        margin-left: -1px;
+    }
+}
+
+/*MEDIA QUERIE _ MOBILE PERIODOS*/
+
+@media screen and (max-width:412px) {
+    
+    .main__periodos
+    {
+       width: 410px;
+       margin-bottom: 450px;
+    
+    .section__periodos
+    {
+        display: flex;
+        flex-direction: column;
+        padding-right: 5px;
+    }
+
+    .section__periodos1
+    {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    }
+
+    /*FOOTER*/
+
+    .footer__periodos
+    {
+        width: 412px;
+    }
+
+}
+
+/*MEDIA QUERIE _ MOBILE MUSEO*/
+
+@media screen and (max-width:412px)
+{
+
+    /*MAIN*/
+
+.main__museo
+{
+    width: 412px;
+    max-height: 695px;
+    padding-top: 30px;
+
+.mapa
+{
+    width: 300px;
+    height: 300px;
+}
+}
+
+}
+
+/*MEDIA QUERIE _ MOBILE CONTACTO*/
+
+@media screen and (max-width:412px)
+{
+    /*MAIN*/
+
+    .main__contacto
+    {
+    width: 412px;
+    padding-top: 20px;
+    
+    .img__contacto
+    {
+        width: 300px;
+    }
+
+    .section__contacto
+    {
+        max-width: 370px;
+        margin-bottom: 34px;
+    }
+
+     form  
+     {
+        padding-top: 10px;
+     }
+    }
+}
+
+/*MEDIA QUERIE - TABLET INDEX*/
+
+@media screen and (max-width:768px) 
+{
+    .main__index
+    {
+        width: 768px;
+        padding-bottom: 90px;
+
+        .h2
+        {
+            margin-bottom: 40px;
+        }
+    }
+
+    .footer__index
+    {
+        max-width: 768px;
+        margin-top: 140px;
+    }
+
+
+}
+
+/*MEDIA QUERIE - TABLET HISTORIA*/
+
+@media screen and (max-width:768px)
+{
+.main__historia
+{
+padding-top: 30px;
+
+.h2
+{
+    padding-bottom: 10px;
+}
+
+.img__historia
+{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+}
+}
+
+/*MEDIA QUERIE - TABLET PERIODOS*/
+
+@media screen and (max-width:768px) 
+{
+    .main__periodos
+    {
+        max-width: 768px;
+
+    .section__periodos
+    {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .section__periodos1
+    {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    }
+
+    .footer__periodos
+    {
+        margin-top: 500px;
+    }
+
+}
+
+/*MEDIA QUERIE - TABLET MUSEO*/
+
+@media screen and (max-width:768px)
+{
+    .main__museo
+    {
+        padding-top: 30px;
+        height: 830px;
+    }
+}
+
+/*MEDIA QUERIE - TABLET CONTACTO*/
+
+@media screen and (max-width:768px)
+{
+.main__contacto
+{
+   padding-top: 30px;
+   padding-bottom: 9px;
+
+   form
+   {
+       padding-top: 5px;
+   }
+}
+}
