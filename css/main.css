@@ -105,7 +105,7 @@
   /*MAIN*/
   .main__index {
     max-width: 412px;
-    max-height: 1060px; }
+    max-height: 1160px; }
     .main__index .card {
       display: flex;
       flex-direction: column;
@@ -231,7 +231,7 @@
 .main__index {
   font-family: 'Prata', serif;
   grid-area: main;
-  padding-top: 126px; }
+  padding-top: 136px; }
   .main__index .p__index {
     text-align: center;
     padding-bottom: 40px; }
