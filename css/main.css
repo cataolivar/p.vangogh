@@ -273,11 +273,15 @@
     line-height: 25px; }
   .main__historia .h3__historia {
     font-size: medium;
-    text-align: center; }
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px; }
   .main__historia .img__historia {
     height: 362px;
     width: 420px;
-    border-radius: 10px; }
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px; }
 
 /*MAIN*/
 .main__periodos {
